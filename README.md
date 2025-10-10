@@ -1,6 +1,7 @@
 # Databricks-Project---end-to-end
 
-<img width="1350" height="640" alt="image" src="https://github.com/user-attachments/assets/1ddd059c-c984-42e3-a4de-bc65465dc691" />
+<img width="1346" height="637" alt="image" src="https://github.com/user-attachments/assets/bbf652b4-0ee8-4962-82d9-9c8e3a4d2464" />
+
 
 
 ### **Project Title:** End-to-End Data Engineering Pipeline on the Databricks Lakehouse Platform
