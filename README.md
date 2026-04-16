@@ -1,107 +1,101 @@
-# Databricks-Project---end-to-end
 
-<img width="1346" height="637" alt="image" src="https://github.com/user-attachments/assets/bbf652b4-0ee8-4962-82d9-9c8e3a4d2464" />
+# 🚗 Vehicle IoT Telemetry Data Pipeline
+### *End-to-End Real-Time Analytics using Apache Kafka, Apache Flink, and Azure*
+
+## 📌 Project Overview
+**Fleetage Mobility** requires real-time visibility into vehicle behavior to proactively detect safety and operational anomalies. This project implements a scalable streaming data platform that ingests vehicle telemetry, performs real-time anomaly detection (speed, fuel, temperature), and triggers automated driver notifications.
 
 
 
-### **Project Title:** End-to-End Data Engineering Pipeline on the Databricks Lakehouse Platform
-<img width="1357" height="634" alt="image" src="https://github.com/user-attachments/assets/5154b815-689f-49b1-9d9a-1fdef3a417fb" />
+The solution leverages a **modern event-driven architecture** focusing on **Phase 1 (Hot Path)** implementation to satisfy stakeholder requirements for sub-second alerting.
 
------
+---
+
+## 🏗️ Architecture Design
+
+### 🔥 Hot Path (Implemented)
+* **Flow:** Telematics Device (Simulated) → **Kafka** → **Flink** → **Alert Topic** → **Azure Function** → **Twilio** → **Driver Notification**
+* **Purpose:** Low-latency, real-time alerting.
+* **Key Traits:** Stateless/Stateful stream operators, serverless triggering, and event-driven dispatch.
+
+### ❄️ Cold Path (Phase 2 - Planned)
+* **Flow:** Kafka → Flink → Azure Blob Storage → ADLS Gen2 → ADF → Synapse Analytics
+* **Purpose:** Historical trend analysis, BI dashboards, and predictive maintenance modeling.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Streaming Platform** | Apache Kafka |
+| **Schema Management** | Confluent Schema Registry (Avro) |
+| **Stream Processing** | Apache Flink |
+| **Cloud Platform** | Microsoft Azure |
+| **Serverless Logic** | Azure Functions |
+| **Communication** | Twilio API (WhatsApp/Voice) |
+| **Languages** | Python (Simulator/Consumers), SQL/Java (Flink) |
+
+---
+
+## ⚙️ Data Flow Implementation
+
+### 1. Telemetry Ingestion
+A Python-based simulator mimics **IoT CAN bus** behavior, producing events to the `vehicle.telemetry` topic. 
+* **Data Governance:** All messages use **Avro serialization** via the Schema Registry to ensure downstream compatibility and strict data quality.
+
+### 2. Real-Time Stream Processing
+Apache Flink consumes the stream and evaluates incoming data against critical business rules:
+
+| Rule | Condition | Action |
+| :--- | :--- | :--- |
+| **Overspeeding** | Speed $> 80$ km/h | Trigger Warning |
+| **Low Fuel** | Fuel $< 10\%$ | Route to Station |
+| **Overheating** | Temp $> 200^{\circ}$C | Emergency Stop |
+
+
+
+### 3. Notification Delivery
+* **Development:** A Python consumer listens to `vehicle.alerts.notifications` and triggers the **Twilio WhatsApp API**.
+* **Production:** Utilizes a **Flink HTTP Sink Connector** to invoke Azure Functions, creating a decoupled, highly scalable dispatch mechanism.
+
+---
+
+## 🚀 Key Engineering Highlights
+* **Unified Alert Pattern:** Consolidates diverse anomalies into a single downstream topic for simplified consumption.
+* **Schema Governance:** Implemented Avro to prevent "poison pill" messages from breaking the pipeline.
+* **Stateful Filtering:** Leveraging Flink’s DataStream API for efficient, real-time threshold monitoring.
+* **Serverless Integration:** Using Azure Functions to handle the "heavy lifting" of third-party API communication.
+
+---
+
+## 🧠 Skills Gained
+* **Messaging:** Kafka topic design, offset management, and partition strategies.
+* **Stream Processing:** Building window-less event processing logic and real-time routing patterns.
+* **Cloud Architecture:** Designing serverless notification pipelines and hot/cold path separation.
+* **Engineering Best Practices:** Decoupling producers from consumers and implementing fault-tolerant sinks.
+
+---
+
+## 🔮 Future Enhancements (Phase 2)
+* **Data Lake Archival:** Implementing a sink to **Azure Data Lake (ADLS Gen2)**.
+* **Medallion Architecture:** Bronze/Silver/Gold modeling using **Delta Lake**.
+* **Advanced Analytics:** Historical trend reporting via **Synapse Analytics** and **Power BI**.
+* **Predictive Maintenance:** Using historical data to predict engine failure before the "Overheating" alert triggers.
+
+---
+
+Due to the prototyping nature of Phase 1, physical IoT sensors were simulated, and WhatsApp was used for alerts. In a production environment, this would transition to automated Voice Calls for driver safety.
+
+---
+Acknowledgment
+Special thanks to Codebasics for providing structured guidance and real-world project frameworks as part of their Data Engineering program. Their curriculum significantly contributed to understanding enterprise streaming architectures and cloud-native pipeline design.
+
+---
 
 <details>
-  
+
+
 
   
-### **CV/Resume Points**
-
-  * Designed and implemented a scalable, multi-layered data architecture (Bronze, Silver, Gold) on Databricks to process real-time streaming data from diverse sources, including CSV, JSON, and a Kafka multiplex stream.
-  * Engineered a robust ingestion framework using **Structured Streaming** and **Auto Loader (`cloudFiles`)** to handle incremental data loads, ensuring data idempotency and fault tolerance with checkpointing.
-  * Developed sophisticated Change Data Capture (CDC) logic in the Silver layer to manage Slowly Changing Dimensions (SCD) Type 1 for user profiles, employing window functions to handle late and out-of-order data effectively.
-  * Optimized data pipelines for performance by implementing **`foreachBatch`** for efficient upsert operations, utilizing **`withWatermark`** and **`dropDuplicates`** for stateful stream processing, and leveraging static-stream joins.
-  * Automated the end-to-end deployment of the data pipeline as a Databricks multi-task job using the **Databricks REST API**, ensuring consistent and repeatable deployments across environments.
-    
 </details>
-
------
-
-
-## **End-to-End Data Engineering Project on Databricks**
-
-### **Project Overview**
-
-This project demonstrates the design and implementation of a modern, medallion-style data architecture on the Databricks Lakehouse Platform. The pipeline ingests and processes streaming data from multiple sources, transforming it through a series of stages to create a high-quality, reliable, and analytics-ready dataset. The core objective is to build a robust, scalable, and maintainable data pipeline that can handle real-time data ingestion and complex data transformations, including Change Data Capture (CDC).
-
-The project is structured into three main layers: Bronze, Silver, and Gold, representing raw, validated, and aggregated data, respectively.
-
-### **Contents & Folder Structure**
-
-The project is organized to promote modularity and reusability, with each Databricks notebook serving a specific purpose in the data pipeline.
-
-```
-/
-├── Deploy.py              (Python script for automated job deployment)
-├── 01-config.py           (Project-wide configuration variables)
-├── 02-setup.py            (Notebook for creating the database and tables)
-├── 03-history-loader.py   (Notebook for loading historical data and performing initial validations)
-├── 04-bronze.py           (Notebook for the Bronze layer ingestion logic)
-├── 05-silver.py           (Notebook for the Silver layer transformation logic)
-├── 06-gold.py             (Notebook for the Gold layer aggregation logic)
-├── 07-run.py              (Main entry point notebook to orchestrate the pipeline run)
-├── 08-batch-test.py       (Notebook for testing the pipeline in batch mode)
-└── 09-stream-test.py      (Notebook for testing the pipeline in streaming mode, including job creation)
-```
-
-### **Data Sources**
-
-The project processes data from several simulated streaming sources, including:
-
-  * **`registered_users` (CSV):** New user registrations.
-  * **`gym_logins` (CSV):** User check-ins and check-outs at gym locations.
-  * **`kafka_multiplex` (JSON):** A multiplexed Kafka stream containing three distinct topics:
-      * **`user_info`:** Change Data Capture (CDC) events for user profile updates.
-      * **`workout`:** Start and stop events for user workouts.
-      * **`bpm`:** Heart rate data from wearable devices.
-
-### **Pipeline Architecture and Process Flow**
-
-The data flows through a medallion architecture, ensuring data quality and usability at each stage.
-
-#### **1. Bronze Layer (Raw Data Ingestion)**
-
-The Bronze layer is the raw ingestion stage. It reads data directly from the landing zone and stores it in Delta tables without any major transformations. This layer acts as a single source of truth for all raw data.
-
-  * **Technology:** Structured Streaming with Auto Loader (`cloudFiles`) is used to incrementally and efficiently ingest new files as they arrive.
-  * **Logic:** The primary logic here is to append all incoming data to the respective Delta tables, preserving the raw state. The `outputMode("append")` is used for this purpose.
-
-#### **2. Silver Layer (Validated & Enriched Data)**
-
-The Silver layer cleanses, refines, and enriches the raw Bronze data. This stage resolves duplicates, applies schemas, and performs necessary joins to create a more reliable and complete dataset for downstream analysis.
-
-  * **Technology:** Structured Streaming with `foreachBatch` is used to apply more complex, batch-oriented logic like `MERGE INTO` operations.
-  * **Logic:**
-      * **`upsert_user_profile`:** Handles Change Data Capture (CDC) for user profile updates. It uses a custom **`CDCUpserter`** class to apply window functions and rank records by a timestamp, ensuring only the latest update for each user is processed.
-
-#### **3. Gold Layer (Aggregated & Business-Ready Data)**
-
-The Gold layer contains the final, aggregated data, optimized for business intelligence, reporting, and machine learning. This data is highly curated and ready for consumption.
-
-  * **Technology:** Structured Streaming with `foreachBatch` is used to create final aggregate tables.
-  * **Logic:**
-      * **`upsert_workout_bpm_summary`:** Groups heart rate data by `user_id`, `workout_id`, and `session_id` to calculate summary statistics like `min_bpm`, `avg_bpm`, and `max_bpm`. This data is then joined with user demographics to create a business-ready table for analytics.
-
------
-
-### **Deployment**
-
-The project deployment is automated using the Databricks REST API. The `Deploy.py` script serves as a single source of truth for the job definition, making the deployment process consistent and repeatable.
-
-#### **Process**
-
-1.  The `Deploy.py` script is executed with the Databricks workspace URL and a personal access token as arguments.
-2.  It constructs a **JSON payload** that defines a Databricks multi-task job named `"ingest-process-pipeline"`.
-3.  This job is configured with a series of dependent tasks:
-      * **`ingest-data`:** This task, which points to a notebook (`/exercise/data_ingestion`), is responsible for running the initial data ingestion.
-      * **`process-data-2014` and `process-data-2015`:** These tasks are configured to run after `ingest-data` is complete. They reference a data analysis notebook and pass specific parameters (`year: 2014` and `year: 2015`) to process data for different years.
-4.  The script then sends a **POST request** to the `api/2.1/jobs/create` endpoint of the Databricks REST API, passing the job definition.
-5.  Upon a successful request, a new multi-task job is created in the Databricks workspace, ready to be triggered manually or via a schedule. This process streamlines the CI/CD pipeline and ensures that the production environment is always in sync with the code repository.
