@@ -96,6 +96,19 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 <details>
 
 
+---
 
+<img width="1293" height="552" alt="image" src="https://github.com/user-attachments/assets/29f882e8-d33f-4912-9563-ed4258850453" />
+<img width="1164" height="631" alt="image" src="https://github.com/user-attachments/assets/b14f6ebf-0bb9-40db-80ae-0e65e909c4ae" />
+<img width="1270" height="626" alt="image" src="https://github.com/user-attachments/assets/c383e0fa-5e93-479a-93ab-89534cb1fb52" />
+<img width="1366" height="427" alt="image" src="https://github.com/user-attachments/assets/66dd9d02-3024-4ca6-90d9-acbc3cbdfce1" />
+<img width="1136" height="625" alt="image" src="https://github.com/user-attachments/assets/72251014-ce04-4f1a-8d3e-77405641c349" />
+
+
+
+
+
+
+---
   
 </details>
