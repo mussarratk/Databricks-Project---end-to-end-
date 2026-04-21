@@ -137,9 +137,29 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 <img width="1236" height="590" alt="image" src="https://github.com/user-attachments/assets/f516cec8-d481-48fd-b2f8-d030842a88c3" />
 
 <img width="1300" height="548" alt="image" src="https://github.com/user-attachments/assets/088ebaf6-bb35-45ad-a054-92b81487c371" />
+<img width="1319" height="575" alt="image" src="https://github.com/user-attachments/assets/8e88a7ce-0317-4e8b-a6cf-d01235104897" />
+- rerun n generated -360 messages new total - 401
+<img width="1362" height="716" alt="image" src="https://github.com/user-attachments/assets/ad64003f-c7ce-4dc3-b334-94236ec033b6" />
+<img width="1352" height="588" alt="image" src="https://github.com/user-attachments/assets/e9b7fe33-6f05-4e51-9ba1-091fa985abc2" />
+<img width="1348" height="603" alt="image" src="https://github.com/user-attachments/assets/20f669d6-3393-4751-9b1c-7d45ef70aee7" />
+<img width="1322" height="463" alt="image" src="https://github.com/user-attachments/assets/1b5a9d93-68ae-446e-85e1-07e9505a96f4" />
+<img width="1355" height="610" alt="image" src="https://github.com/user-attachments/assets/d6fa72e8-1a01-4a7e-b36e-19371f84b28b" />
+- above 80
+<img width="1348" height="612" alt="image" src="https://github.com/user-attachments/assets/c91c36bc-3e93-4df1-b25d-14baebe8437e" />
+<img width="1326" height="535" alt="image" src="https://github.com/user-attachments/assets/d404ae9c-9e84-43d9-8085-595ad37c807f" />
+<img width="1341" height="599" alt="image" src="https://github.com/user-attachments/assets/7b3cf8fc-b7a4-4cac-9f18-579590b136bd" />
+<img width="1261" height="572" alt="image" src="https://github.com/user-attachments/assets/64f35db5-cbca-4cf8-b28e-ccdbe9c929c7" />
+<img width="1349" height="615" alt="image" src="https://github.com/user-attachments/assets/bd5c6297-30b6-4607-930b-d77036f92539" />
+<img width="1314" height="602" alt="image" src="https://github.com/user-attachments/assets/48347e6e-c3f1-45da-b070-77732bb4e234" />
 
 
-- twillio
+
+
+- twillio setup
+<img width="410" height="565" alt="image" src="https://github.com/user-attachments/assets/e14890ab-b451-4c73-b313-eac0a6b9b4e9" />
+<img width="1322" height="580" alt="image" src="https://github.com/user-attachments/assets/4ca9859e-e9ee-4056-b244-893047590686" />
+<img width="1317" height="606" alt="image" src="https://github.com/user-attachments/assets/02e697ac-3a71-4ca1-90c5-fbad799cf19a" />
+<img width="1353" height="717" alt="image" src="https://github.com/user-attachments/assets/fc565476-6be7-47b9-a654-add62cbfaca4" />
 
 
 - azure function
