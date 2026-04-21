@@ -97,7 +97,7 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 
 
 ---
-- Setup : Env, topic, registry, cluster
+# Setup : Env, topic, registry, cluster
 <img width="1293" height="552" alt="image" src="https://github.com/user-attachments/assets/29f882e8-d33f-4912-9563-ed4258850453" />
 <img width="1164" height="631" alt="image" src="https://github.com/user-attachments/assets/b14f6ebf-0bb9-40db-80ae-0e65e909c4ae" />
 <img width="1270" height="626" alt="image" src="https://github.com/user-attachments/assets/c383e0fa-5e93-479a-93ab-89534cb1fb52" />
@@ -112,7 +112,7 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 <img width="1179" height="629" alt="image" src="https://github.com/user-attachments/assets/6c0aef1c-57a6-4a10-b12c-da7ab2b1685a" />
 <img width="737" height="248" alt="image" src="https://github.com/user-attachments/assets/a890e9d5-c86a-457b-984d-c6dcadc66e5d" />
 
-- Producer (Vehicle simulator)
+# Producer (Vehicle simulator)
 
 <img width="1357" height="594" alt="image" src="https://github.com/user-attachments/assets/523d6230-51e0-4ba3-97e2-8e6e8fed85ff" />
 <img width="1356" height="717" alt="image" src="https://github.com/user-attachments/assets/e0851a08-ebdf-497d-8d93-695326d3feb2" />
@@ -121,6 +121,30 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 <img width="1348" height="619" alt="image" src="https://github.com/user-attachments/assets/94d19f33-63ea-4ef1-96ae-a983a58e28c1" />
 <img width="1358" height="632" alt="image" src="https://github.com/user-attachments/assets/5b25d937-81de-4782-b66b-5c0c66973f71" />
 <img width="1349" height="615" alt="image" src="https://github.com/user-attachments/assets/d4fb223f-eea6-4991-aa2e-90296b2636de" />
+
+# Flink 
+- TABLE `vehicle_telemetry` - total 131 records 
+
+<img width="1355" height="595" alt="image" src="https://github.com/user-attachments/assets/1f7fb84b-30db-43bb-9b3d-a25e6f2bc8f4" />
+<img width="1150" height="600" alt="image" src="https://github.com/user-attachments/assets/afc6e0c7-7bdf-48a3-8480-2abd5bcea299" />
+<img width="1353" height="571" alt="image" src="https://github.com/user-attachments/assets/1227b8be-70c7-4ab6-a0c8-2806b36342d7" />
+- sql
+<img width="1360" height="613" alt="image" src="https://github.com/user-attachments/assets/f494da24-90da-4be6-a227-42b3779d19a7" />
+<img width="1348" height="609" alt="image" src="https://github.com/user-attachments/assets/f8944ce6-6110-4bdb-b686-148a155b6348" />
+- TABLE `vehicle.speeding`  FILTER CONDITION: Only vehicles exceeding 80 km/h
+<img width="1339" height="629" alt="image" src="https://github.com/user-attachments/assets/9b9dcc4b-3112-40f5-b6c4-b3561f73e214" />
+- auto create second time
+<img width="1236" height="590" alt="image" src="https://github.com/user-attachments/assets/f516cec8-d481-48fd-b2f8-d030842a88c3" />
+
+<img width="1300" height="548" alt="image" src="https://github.com/user-attachments/assets/088ebaf6-bb35-45ad-a054-92b81487c371" />
+
+
+- twillio
+
+
+- azure function
+
+
 
 
 
