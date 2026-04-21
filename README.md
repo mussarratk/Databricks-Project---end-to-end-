@@ -115,7 +115,12 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 - Producer (Vehicle simulator)
 
 <img width="1357" height="594" alt="image" src="https://github.com/user-attachments/assets/523d6230-51e0-4ba3-97e2-8e6e8fed85ff" />
+<img width="1356" height="717" alt="image" src="https://github.com/user-attachments/assets/e0851a08-ebdf-497d-8d93-695326d3feb2" />
+<img width="1357" height="712" alt="image" src="https://github.com/user-attachments/assets/f84c8c93-ed83-437f-8006-adb53bbff82c" />
 
+<img width="1348" height="619" alt="image" src="https://github.com/user-attachments/assets/94d19f33-63ea-4ef1-96ae-a983a58e28c1" />
+<img width="1358" height="632" alt="image" src="https://github.com/user-attachments/assets/5b25d937-81de-4782-b66b-5c0c66973f71" />
+<img width="1349" height="615" alt="image" src="https://github.com/user-attachments/assets/d4fb223f-eea6-4991-aa2e-90296b2636de" />
 
 
 
