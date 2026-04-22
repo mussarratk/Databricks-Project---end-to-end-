@@ -167,6 +167,8 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 
 <img width="1353" height="717" alt="image" src="https://github.com/user-attachments/assets/fc565476-6be7-47b9-a654-add62cbfaca4" />
 <img width="1354" height="716" alt="image" src="https://github.com/user-attachments/assets/d71c11f7-d568-49b6-9f22-ded0c5302734" />
+- whatsapp notification
+<img width="860" height="507" alt="image" src="https://github.com/user-attachments/assets/d44e143a-98bb-4c9a-aed8-308c081dd3cb" />
 
 
 - azure function
