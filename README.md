@@ -192,8 +192,15 @@ azure az login
 ---
 - powershell vs code
 - az login
-PS C:\code\vehicle_telemetry_azure_assets> .\.venv\Scripts\Activate.ps1
+- PS C:\code\vehicle_telemetry_azure_assets> .\.venv\Scripts\Activate.ps1
 (.venv) PS C:\code\vehicle_telemetry_azure_assets> az functionapp list --resource-group realtime-rg --output table
+
+fapp-telemetry-hotpath-001
+- (.venv) PS C:\code\vehicle_telemetry_azure_assets> func azure functionapp publish fapp-telemetry-hotpath-001
+install func
+func --version
+func - it deploys all files in vs code to azure function
+func azure functionapp publish fapp-telemetry-hotpath-001
 
 ---
 
