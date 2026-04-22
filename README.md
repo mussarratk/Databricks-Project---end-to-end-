@@ -95,7 +95,9 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 
 <details>
 
+Kafka Topic : consumes -> Flink Cluster : stream process - Route to Topics use Kafka triger consumption -> Azure Function (serverless) : consume the alert event the hot path execution engine -> Azure Blob Storage: store alert data -> Twilio: send message
 
+vehicle_telemetry is the source - 
 ---
 # Setup : Env, topic, registry, cluster
 <img width="1293" height="552" alt="image" src="https://github.com/user-attachments/assets/29f882e8-d33f-4912-9563-ed4258850453" />
@@ -164,6 +166,7 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 <img width="1322" height="580" alt="image" src="https://github.com/user-attachments/assets/4ca9859e-e9ee-4056-b244-893047590686" />
 <img width="1317" height="606" alt="image" src="https://github.com/user-attachments/assets/02e697ac-3a71-4ca1-90c5-fbad799cf19a" />
 <img width="1357" height="296" alt="image" src="https://github.com/user-attachments/assets/346d0e16-b13a-42c0-a0de-cc9ac0e64f70" />
+<img width="506" height="347" alt="image" src="https://github.com/user-attachments/assets/178bd446-d229-425d-aeaa-29e693d31a07" />
 
 <img width="1353" height="717" alt="image" src="https://github.com/user-attachments/assets/fc565476-6be7-47b9-a654-add62cbfaca4" />
 <img width="1354" height="716" alt="image" src="https://github.com/user-attachments/assets/d71c11f7-d568-49b6-9f22-ded0c5302734" />
@@ -172,8 +175,27 @@ Special thanks to Codebasics for providing structured guidance and real-world pr
 
 
 - azure function
+<img width="1364" height="622" alt="image" src="https://github.com/user-attachments/assets/244df65a-968e-40a8-b106-ec163c73043d" />
+<img width="1353" height="581" alt="image" src="https://github.com/user-attachments/assets/d179d635-76fd-4ee9-adb2-31150e3eac0d" />
+<img width="1363" height="488" alt="image" src="https://github.com/user-attachments/assets/c7f0ea57-f876-4236-adc8-cfcbe74a6d8f" />
 
+---
+vs code
+<img width="1076" height="707" alt="image" src="https://github.com/user-attachments/assets/538e9106-30f7-42d0-9657-4ee459ea9851" />
+<img width="1076" height="707" alt="image" src="https://github.com/user-attachments/assets/8c38d565-ae62-4898-8020-c674046d8852" />
+<img width="1365" height="435" alt="image" src="https://github.com/user-attachments/assets/22d56de3-3468-4ffa-b061-7893a67addb6" />
 
+azure az login
+<img width="1354" height="539" alt="image" src="https://github.com/user-attachments/assets/8a2fb469-6b8f-4e6c-8558-dc613d052cc1" />
+<img width="1353" height="708" alt="image" src="https://github.com/user-attachments/assets/71c8c036-9649-4a78-aab5-5abe310a8506" />
+
+---
+- powershell vs code
+- az login
+PS C:\code\vehicle_telemetry_azure_assets> .\.venv\Scripts\Activate.ps1
+(.venv) PS C:\code\vehicle_telemetry_azure_assets> az functionapp list --resource-group realtime-rg --output table
+
+---
 
 
 
