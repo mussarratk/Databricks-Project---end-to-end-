@@ -159,6 +159,7 @@ vehicle_telemetry is the source -
 <img width="1329" height="595" alt="image" src="https://github.com/user-attachments/assets/277dda97-0cc0-48fd-a232-2c3bd06ec082" />
 <img width="1250" height="706" alt="image" src="https://github.com/user-attachments/assets/63c4450f-fe50-4da3-8079-769bc26254ee" />
 <img width="1354" height="716" alt="image" src="https://github.com/user-attachments/assets/7cd5a83a-b8d4-448d-bad2-cb20a9681dd3" />
+<img width="1352" height="530" alt="image" src="https://github.com/user-attachments/assets/02d4b042-330f-4c48-a78c-2f4e9a401f06" />
 
 
 - twillio setup
@@ -201,6 +202,23 @@ install func
 func --version
 func - it deploys all files in vs code to azure function
 func azure functionapp publish fapp-telemetry-hotpath-001
+
+
+<img width="1357" height="715" alt="image" src="https://github.com/user-attachments/assets/483f1e20-5c75-44bc-9d54-c8bfee8720e2" />
+<img width="1359" height="710" alt="image" src="https://github.com/user-attachments/assets/1a2b3879-cdd7-4123-a625-ae1808d21734" />
+<img width="1365" height="614" alt="image" src="https://github.com/user-attachments/assets/d6b33b22-af5d-4b75-804c-533b5324e241" />
+<img width="1356" height="620" alt="image" src="https://github.com/user-attachments/assets/79609a32-2f8c-4567-8fba-2f83eef0c994" />
+<img width="1352" height="620" alt="image" src="https://github.com/user-attachments/assets/8665bae3-b339-4ed1-b7e9-92bfd30104f7" />
+
+<img width="1350" height="714" alt="image" src="https://github.com/user-attachments/assets/1fdb596b-9e65-45aa-9c58-a2484342a52d" />
+<img width="1362" height="612" alt="image" src="https://github.com/user-attachments/assets/b47f2def-2b1d-4e6f-a83b-2e438ee4da4c" />
+<img width="1361" height="429" alt="image" src="https://github.com/user-attachments/assets/072b6e11-ab70-4efd-b4f1-8deadca8f03d" />
+
+TWILIO_FROM_NUMBER - total 7 env varible added
+<img width="1363" height="716" alt="image" src="https://github.com/user-attachments/assets/63bc8f06-0a91-4448-8793-9b1658269280" />
+
+
+
 
 ---
 
