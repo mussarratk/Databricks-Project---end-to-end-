@@ -214,6 +214,14 @@ func azure functionapp publish fapp-telemetry-hotpath-001
 <img width="1362" height="612" alt="image" src="https://github.com/user-attachments/assets/b47f2def-2b1d-4e6f-a83b-2e438ee4da4c" />
 <img width="1361" height="429" alt="image" src="https://github.com/user-attachments/assets/072b6e11-ab70-4efd-b4f1-8deadca8f03d" />
 
+- correct python version and vs code file dir structure
+- (.venv) PS C:\code\vehicle_telemetry_azure_assets\1_hot_path> func azure functionapp publish fapp-telemetry-hotpath-001 
+<img width="1357" height="712" alt="image" src="https://github.com/user-attachments/assets/cdef5830-8fbb-4360-b5e7-c5a67c46474a" />
+<img width="1353" height="608" alt="image" src="https://github.com/user-attachments/assets/0508d1bb-8a55-4ac7-8901-ccf3cb696c9f" />
+
+
+
+
 TWILIO_FROM_NUMBER - total 7 env varible added
 <img width="1363" height="716" alt="image" src="https://github.com/user-attachments/assets/63bc8f06-0a91-4448-8793-9b1658269280" />
 <img width="1347" height="577" alt="image" src="https://github.com/user-attachments/assets/069341f9-c57e-4028-9fdf-70edeab5c3c8" />
