@@ -216,6 +216,7 @@ func azure functionapp publish fapp-telemetry-hotpath-001
 
 TWILIO_FROM_NUMBER - total 7 env varible added
 <img width="1363" height="716" alt="image" src="https://github.com/user-attachments/assets/63bc8f06-0a91-4448-8793-9b1658269280" />
+<img width="1347" height="577" alt="image" src="https://github.com/user-attachments/assets/069341f9-c57e-4028-9fdf-70edeab5c3c8" />
 
 
 
