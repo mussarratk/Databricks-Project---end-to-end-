@@ -18,9 +18,15 @@ The solution leverages a **modern event-driven architecture** focusing on **Phas
 * **Purpose:** Low-latency, real-time alerting.
 * **Key Traits:** Stateless/Stateful stream operators, serverless triggering, and event-driven dispatch.
 
+<img width="1365" height="480" alt="image" src="https://github.com/user-attachments/assets/9e7a7adf-cab2-4746-9d5b-ca9ab2c4a5d6" />
+
+
 ### ❄️ Cold Path (Phase 2 - Planned)
 * **Flow:** Kafka → Flink → Azure Blob Storage → ADLS Gen2 → ADF → Synapse Analytics
 * **Purpose:** Historical trend analysis, BI dashboards, and predictive maintenance modeling.
+
+<img width="1364" height="418" alt="image" src="https://github.com/user-attachments/assets/1a936234-fe28-4b92-b828-a12b634d8091" />
+
 
 ---
 
@@ -58,6 +64,15 @@ Apache Flink consumes the stream and evaluates incoming data against critical bu
 ### 3. Notification Delivery
 * **Development:** A Python consumer listens to `vehicle.alerts.notifications` and triggers the **Twilio WhatsApp API**.
 * **Production:** Utilizes a **Flink HTTP Sink Connector** to invoke Azure Functions, creating a decoupled, highly scalable dispatch mechanism.
+---
+<img width="1360" height="613" alt="image" src="https://github.com/user-attachments/assets/f494da24-90da-4be6-a227-42b3779d19a7" />
+
+- TABLE `vehicle.speeding`  FILTER CONDITION: Only vehicles exceeding 80 km/h
+<img width="1339" height="629" alt="image" src="https://github.com/user-attachments/assets/9b9dcc4b-3112-40f5-b6c4-b3561f73e214" />
+
+<img width="860" height="507" alt="image" src="https://github.com/user-attachments/assets/d44e143a-98bb-4c9a-aed8-308c081dd3cb" />
+
+<img width="1357" height="404" alt="image" src="https://github.com/user-attachments/assets/1df8a929-127b-408a-a16e-cef60ab23806" />
 
 ---
 
@@ -135,6 +150,7 @@ vehicle_telemetry is the source -
 <img width="1348" height="609" alt="image" src="https://github.com/user-attachments/assets/f8944ce6-6110-4bdb-b686-148a155b6348" />
 - TABLE `vehicle.speeding`  FILTER CONDITION: Only vehicles exceeding 80 km/h
 <img width="1339" height="629" alt="image" src="https://github.com/user-attachments/assets/9b9dcc4b-3112-40f5-b6c4-b3561f73e214" />
+
 - auto create second time
 <img width="1236" height="590" alt="image" src="https://github.com/user-attachments/assets/f516cec8-d481-48fd-b2f8-d030842a88c3" />
 
@@ -227,20 +243,24 @@ TWILIO_FROM_NUMBER - total 7 env varible added
 <img width="1357" height="712" alt="image" src="https://github.com/user-attachments/assets/cdef5830-8fbb-4360-b5e7-c5a67c46474a" />
 <img width="1353" height="608" alt="image" src="https://github.com/user-attachments/assets/0508d1bb-8a55-4ac7-8901-ccf3cb696c9f" />
 ---
-- corrected final dir system 
+### corrected final dir system 
 
 <img width="1352" height="566" alt="image" src="https://github.com/user-attachments/assets/5b162a9e-74d1-4464-8382-8c0dfd1b9bcf" />
 <img width="1361" height="553" alt="image" src="https://github.com/user-attachments/assets/1274f06d-05b8-415d-bdf6-c5c564387fa8" />
 
 ---
-generate 50 messages from kafka producer - consume flink - tables - run azure func fapp to see in azure function app - invocation - messages
+### generate 50 messages from kafka producer - consume flink - tables - run azure func fapp to see in azure function app - invocation - messages
 
 <img width="1356" height="712" alt="image" src="https://github.com/user-attachments/assets/65a0f6ff-12ed-4170-ad07-f1f5fc405adc" />
 <img width="1362" height="550" alt="image" src="https://github.com/user-attachments/assets/844039f0-faf0-4fbf-b0ed-051527388dc1" />
 <img width="1359" height="598" alt="image" src="https://github.com/user-attachments/assets/1ad2851f-e9be-493b-8271-75f299fbf6d1" />
 
 <img width="1226" height="628" alt="image" src="https://github.com/user-attachments/assets/eb3be2a7-233f-45de-86e6-527967b3fe8b" />
+<img width="1360" height="611" alt="image" src="https://github.com/user-attachments/assets/6779e2b5-eab9-486b-8ec4-ecba4cd024dd" />
+<img width="1357" height="404" alt="image" src="https://github.com/user-attachments/assets/1df8a929-127b-408a-a16e-cef60ab23806" />
 
+- 30 alert messages downloaded from azure blob
+<img width="958" height="578" alt="image" src="https://github.com/user-attachments/assets/cdb6df47-25d0-4963-afae-17ba8d97a155" />
 
 
 
