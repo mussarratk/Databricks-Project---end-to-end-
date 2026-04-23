@@ -71,6 +71,10 @@ Apache Flink consumes the stream and evaluates incoming data against critical bu
 <img width="1339" height="629" alt="image" src="https://github.com/user-attachments/assets/9b9dcc4b-3112-40f5-b6c4-b3561f73e214" />
 
 <img width="860" height="507" alt="image" src="https://github.com/user-attachments/assets/d44e143a-98bb-4c9a-aed8-308c081dd3cb" />
+<img width="1362" height="550" alt="image" src="https://github.com/user-attachments/assets/844039f0-faf0-4fbf-b0ed-051527388dc1" />
+<img width="1359" height="598" alt="image" src="https://github.com/user-attachments/assets/1ad2851f-e9be-493b-8271-75f299fbf6d1" />
+
+<img width="1226" height="628" alt="image" src="https://github.com/user-attachments/assets/eb3be2a7-233f-45de-86e6-527967b3fe8b" />
 
 <img width="1357" height="404" alt="image" src="https://github.com/user-attachments/assets/1df8a929-127b-408a-a16e-cef60ab23806" />
 
