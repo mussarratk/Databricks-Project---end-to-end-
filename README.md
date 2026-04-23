@@ -233,9 +233,13 @@ TWILIO_FROM_NUMBER - total 7 env varible added
 <img width="1361" height="553" alt="image" src="https://github.com/user-attachments/assets/1274f06d-05b8-415d-bdf6-c5c564387fa8" />
 
 ---
-generate 10 messages from kafka producer - consume flink - tables - run azure func fapp to see in azure function app - invocation - messages
+generate 50 messages from kafka producer - consume flink - tables - run azure func fapp to see in azure function app - invocation - messages
 
+<img width="1356" height="712" alt="image" src="https://github.com/user-attachments/assets/65a0f6ff-12ed-4170-ad07-f1f5fc405adc" />
+<img width="1362" height="550" alt="image" src="https://github.com/user-attachments/assets/844039f0-faf0-4fbf-b0ed-051527388dc1" />
+<img width="1359" height="598" alt="image" src="https://github.com/user-attachments/assets/1ad2851f-e9be-493b-8271-75f299fbf6d1" />
 
+<img width="1226" height="628" alt="image" src="https://github.com/user-attachments/assets/eb3be2a7-233f-45de-86e6-527967b3fe8b" />
 
 
 
