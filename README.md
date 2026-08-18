@@ -22,11 +22,13 @@ The solution leverages a **modern event-driven architecture** focusing on **Phas
 
 
 ### ❄️ Cold Path (Phase 2 - Planned)
+
+- https://github.com/mussarratk/de_pipeline
+
 * **Flow:** Kafka → Flink → Azure Blob Storage → ADLS Gen2 → ADF → Synapse Analytics
 * **Purpose:** Historical trend analysis, BI dashboards, and predictive maintenance modeling.
 
 <img width="1364" height="418" alt="image" src="https://github.com/user-attachments/assets/1a936234-fe28-4b92-b828-a12b634d8091" />
-
 
 ---
 
